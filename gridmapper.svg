@@ -387,7 +387,8 @@ var Map = {
     'generic-trap': 'trap',
     'statue': 'well',
     'well': 'fountain',
-    'fountain': 'statue',
+    'fountain': 'testobj',
+    'testobj': 'statue',
     'stair-spiral-down': 'stair-spiral-up',
     'stair-spiral-up': 'stair-big-spiral-down',
     'stair-big-spiral-down': 'stair-big-spiral-up',
@@ -3845,6 +3846,10 @@ onload = initialize;
       <circle cx="5" cy="5" r="2.5" fill="none" stroke="black" stroke-width="0.5"/>
       <circle cx="5" cy="4" r="1.5" fill="none" stroke="black" stroke-width="0.5"/>
     </g>
+    <g id="testobj" width="10">
+      <rect width="10" height="10" x="0" y="0" fill="black" />
+      <circle cx="5" cy="5" r="3.5" fill="red" stroke="blue" stroke-width="0.5"/>
+    </g>
     <g id="trap" width="10">
       <rect width="10" height="10" class="background" stroke="black" stroke-width="1"/>
       <rect x="2" y="2" width="6" height="6" fill="none" stroke="black" stroke-width="1"/>
@@ -4255,6 +4260,9 @@ onload = initialize;
       </a>
       <a xlink:href="javascript:interpret('bvv')" title="fountain">
 	<use x="110" xlink:href="#fountain"/>
+      </a>
+      <a xlink:href="javascript:interpret('bvvv')" title="testobj">
+        <use x="140" y="1" xlink:href="#testobj"/>
       </a>
     </svg>
 
